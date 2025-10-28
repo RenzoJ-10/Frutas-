@@ -1,0 +1,62 @@
+using System;
+
+
+
+class Program
+
+{
+
+    static void Main()
+
+    {
+
+        Console.Write("Arreglar la longitud: ");
+
+        string var1 = Console.ReadLine();
+
+
+
+
+        string[] fruta = new string[7];
+
+
+
+        fruta[0] = "naranja";
+
+        fruta[1] = "manzana";
+
+        fruta[2] = "pitahaya";
+
+        fruta[3] = "pera";
+
+        fruta[4] = "fresa";
+
+        fruta[5] = "durazno";
+
+        fruta[6] = "sandia";
+
+
+
+        int[] precios = { 12, 13, 14, 7, 14, 13, 17 };
+
+
+
+        Console.WriteLine("\nListado de frutas y precios:\n");
+
+
+
+        for (int i = 0; i < precios.Length; i++)
+
+        {
+
+            Console.WriteLine($"{fruta[i]} cuesta S/. {precios[i]}");
+
+        }
+
+
+
+        Console.WriteLine("\nEl total de frutas es: " + fruta.Length);
+
+    }
+
+}
