@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.SqlServer.Server;
+
+namespace Semana11a
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Cuantas frutas ingresaras: ");
+            int n = int.Parse(Console.ReadLine());
+
+            string[] frutas = new string[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"Ingresar la fruta #{i+1}: ");
+                frutas[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Las frutas ingresadas son: "+frutas.Length); 
+            for (int i = 0;i < n; i++)
+            {
+                Console.WriteLine($"-{frutas[i]}");
+            }
+            
+        }
+    }
+}
